@@ -61,10 +61,10 @@
                         <a href=""><i class="fas fa-search"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="login.html" class="links login">Log In</a>
+                        <a href="login.html" class="links login" data-toggle="modal" data-target="#logInModal">Log In</a>
                     </li>
                     <li class="nav-item login">
-                        <a href="sign-up.html" class="links sign-up">Sign Up</a>
+                        <a href="sign-up.html" class="links sign-up" data-toggle="modal" data-target="#signUpModal">Sign Up</a>
                     </li>
                 </ul>
             </div>
@@ -103,6 +103,119 @@
             </div> -->
         </nav>
         <!-- Navbar Ends Here -->
+
+        <!-- Log In Modal -->
+        <div class="modal sign-in" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">                           
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h5>Log in to start bidding</h5>
+
+                        <form class="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Username or Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password" required>
+                            </div>
+                            <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                                <label class="custom-control-label" for="customControlAutosizing">
+                                    Remember me
+                                </label>
+                            </div>
+
+                            <button type="submit" class="submit-btn">Log in</button>
+                        </form>
+
+                        <p class="or-text">OR</p>
+
+                        <button class="facebook-btn">Log in with Facebook</button>
+
+                        <p class="foot">New User? <a href="" data-dismiss="modal" data-toggle="modal" data-target="#signUpModal">Sign Up</a> | <a href="" data-dismiss="modal" data-toggle="modal" data-target="#forgotPasswordModal">Forgot Password</a></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sign Up Modal -->
+        <div class="modal sign-up" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">                           
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h5>Let's get you started</h5>
+
+                        <form class="form">
+                            <div class="form-group">
+                                <input type="name" class="form-control" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Choose Username" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="form-control" placeholder="Phone Number" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Confirm Password" required>
+                            </div>
+                            <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" class="custom-control-input" id="customControlAutosizing2">
+                                <label class="custom-control-label" for="customControlAutosizing2">
+                                    I accept the Terms and Conditions and the Privacy Policy of AwoofBay.com
+                                </label>
+                            </div>
+
+                            <button type="submit" class="submit-btn">Sign up</button>
+                        </form>
+
+                        <p class="or-text">OR</p>
+
+                        <button class="facebook-btn">Sign up with Facebook</button>
+
+                        <p class="foot">Already have an account? <a href="" data-dismiss="modal" data-toggle="modal" data-target="#logInModal">Log In</a></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Forgot Password Modal -->
+        <div class="modal forgot-password" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">                           
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h5>Forgot Password</h5>
+
+                        <form class="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Username or Email" required>
+                            </div>
+
+                            <button type="submit" class="submit-btn">Reset password</button>
+                        </form>
+
+                        <p class="foot">Remember now? <a href="" data-dismiss="modal" data-toggle="modal" data-target="#logInModal">Log In</a></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Main Page Content Starts Here -->
         <div class="main" id="main">
@@ -744,7 +857,7 @@
             <div class="section section-six">
                 <h3>Ready to Start Winning?</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="sign-up.html">Join for Free</a>
+                <a href="sign-up.html" data-toggle="modal" data-target="#signUpModal">Join for Free</a>
             </div>
                 
         </div>

@@ -189,6 +189,140 @@ body {
 }
 
 
+/* Modals Start Here */
+
+.modal .modal-content {
+    margin: 0 auto;
+    max-width: 450px;
+    background: #fff;
+}
+
+.modal .modal-body {
+    position: relative;
+    padding: 25px;
+    color: #000;
+    font-size: 1em;
+}
+
+.modal .modal-body .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 2em;
+}
+
+.modal .modal-body h5 {
+    font-size: 1em;
+    margin-top: 12px;
+    margin-bottom: 25px;
+}
+
+.modal .modal-body form {
+    padding: 0;
+    margin: 0;
+}
+
+.modal form .form-group {
+    margin-bottom: 25px;
+}
+
+.modal form .form-group input {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    border: 1px solid #CACBCC;
+    padding: 17px 13px;
+    padding-bottom: 16px;
+    height: 45px;
+    border-radius: 3px;
+}
+.modal form .form-group input:focus {
+    border: 1px solid #000 !important;
+}
+
+.modal .custom-control{
+    margin-top: -8px;
+    margin-bottom: 25px;
+    font-size: 0.9em;
+}
+
+.modal .custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    background-color: #DC445D !important;
+}
+
+.modal form .submit-btn {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    background: #DC445D;
+    color: #fff;
+    font-size: 0.95em;
+    padding: 14px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.modal form .submit-btn:hover {
+    opacity: .95;
+}
+
+
+.modal .or-text {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    text-align: center;
+}
+
+.modal .facebook-btn {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    background: #5187D2;
+    color: #fff;
+    font-size: 0.95em;
+    padding: 14px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.modal .facebook-btn:hover {
+    opacity: .95;
+}
+
+.modal .foot {
+    margin: 0;
+    margin-top: 38px;
+    color: #000;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.modal .foot a {
+    color: #DC445D;
+}
+.modal .foot a:hover {
+    text-decoration: underline;
+}
+
+
+/*Responsive Page Starts Here*/
+
+@media screen and (max-width: 394px){
+    .modal .modal-dialog {
+        padding: 0px !important;
+    }
+
+    .modal .modal-content {
+        padding: 0px !important;
+    }
+
+    .modal .modal-body {
+        padding: 10px !important;
+    }
+}
+
+/* Modals Ends Here*/
+
+
 /* Main Page Starts Here */
 
 .main{
