@@ -769,6 +769,14 @@ body {
     border-radius: 0px;
     border: none;
 }
+.auctions.adverts .card.last {
+    padding: 54px 45px;
+    color: #fff;
+    background: url(../images/advert-img-2.png) no-repeat;
+    background-size: cover;
+    border-radius: 0px;
+    border: none;
+}
 
 .auctions.adverts .card h4 {
     font-size: 1.4em;
@@ -805,6 +813,49 @@ body {
 
 /* Auctions Page Ends Here */
 
+
+/* Auctions Page Starts Here */
+
+
+.section-three.upcoming {
+    padding-top: 100px !important;
+    padding-bottom: 80px !important;
+    width: 100%;
+}
+
+.section-three.upcoming .heading-text {
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 66px;
+}
+
+.section-three.upcoming .cards-div .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+}
+
+.section-three.upcoming .cards-div .load-p {
+    margin: 0;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.section-three.upcoming .cards-div .load-p .load {
+    padding: 15px 30px;
+    width: fit-content;
+    color: #fff;
+    letter-spacing: 0.04em;
+    font-size: 0.87em;
+    font-weight: bold;
+    background: #DC445D;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Auctions Page Ends Here */
 
 
 
@@ -992,6 +1043,12 @@ footer .columns .footer-form .primary-btn {
         padding: 0px 50px;
     }
 
+    .section-three.upcoming .cards-div .swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 30px;
+    }
+
     footer{
         padding-left: 50px;
         padding-right: 50px;
@@ -1048,6 +1105,12 @@ footer .columns .footer-form .primary-btn {
         height: 40px;
     }
 
+    .section-three.upcoming .cards-div .swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 50px;
+    }
+
     footer{
         padding-left: 30px;
         padding-right: 30px;
@@ -1067,6 +1130,12 @@ footer .columns .footer-form .primary-btn {
 }
 
 @media screen and (max-width: 830px){
+    .section-three.upcoming .cards-div .swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 30px;
+    }
+
     footer .columns-row {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1100,6 +1169,22 @@ footer .columns .footer-form .primary-btn {
     }
 }
 
+@media screen and (max-width: 730px){
+    .section-three.upcoming .cards-div .swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 100px;
+    }
+}
+
+@media screen and (max-width: 610px){
+    .section-three.upcoming .cards-div .swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 60px;
+    }
+}
+
 @media screen and (max-width: 600px){
     .navbar{
         padding: 8px 10px;
@@ -1127,6 +1212,12 @@ footer .columns .footer-form .primary-btn {
         grid-gap: 30px;
     }
 
+    .section-three.upcoming .cards-div .swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 30px;
+    }
+
     footer .columns-row {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -1140,6 +1231,19 @@ footer .columns .footer-form .primary-btn {
 
     footer .columns-row .columns.copy {
         grid-row: 5;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .section-three.upcoming .cards-div .swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0px;
+    }
+
+    .section-three.upcoming .cards-div .swiper-wrapper .card {
+        margin: 0 auto;
+        width: 300px;
     }
 }
 
@@ -1177,5 +1281,12 @@ footer .columns .footer-form .primary-btn {
 
     .section-two .why-div .info p {
         font-size: 0.85em;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .section-three.upcoming .cards-div .swiper-wrapper .card {
+        margin: 0 auto;
+        width: 100%;
     }
 }
