@@ -507,6 +507,13 @@ body {
     transition: .2s ease-in-out;
 }
 
+.section-three .swiper-wrapper .card a:hover {
+    text-decoration: none;
+}
+.section-three .swiper-wrapper .card a:hover h5 {
+    color: #DC445D;
+}
+
 .section-three .swiper-wrapper .card .card-img {
     width: 100%;
     height: 112px;
@@ -516,6 +523,7 @@ body {
 .section-three .swiper-wrapper .card h5 {
     font-weight: bold;
     font-size: 1em;
+    color: #000;
     letter-spacing: 0.03em;
     margin-bottom: 33px;
 }
