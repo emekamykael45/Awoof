@@ -786,6 +786,12 @@ body {
     border: none;
 }
 
+.auctions.adverts .card h1 {
+    font-size: 2.3em;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
 .auctions.adverts .card h4 {
     font-size: 1.4em;
     font-weight: bold;
@@ -865,6 +871,307 @@ body {
 
 /* Auctions Page Ends Here */
 
+
+/* Product Page Ends Here */
+
+
+.product-section {
+    width: 100%;
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-gap: 70px;
+}
+
+.product-section .left {
+    width: 100%;
+}
+
+.product-section .left .swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.product-section .left .swiper-container.gallery-top .swiper-wrapper {
+  width: 100%;
+  height: 300px;
+}
+.product-section .left .swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+.product-section .left .gallery-top {
+  height: 80%;
+  width: 100%;
+}
+.product-section .left .gallery-thumbs {
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+.product-section .left .gallery-thumbs .swiper-slide {
+  height: 60px;
+  opacity: 0.4;
+}
+.product-section .left .gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.product-section .swiper-button-next, .product-section .swiper-button-prev {
+    background-image: none;
+}
+
+.product-section .swiper-button-next i, .product-section .swiper-button-prev i {
+    background: #fff;
+    color: #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 17px 20px;
+    padding-right: 22px;
+    font-size: 1.3em;
+    border-radius: 100%;
+    opacity: 0.6;
+}
+
+.product-section .swiper-button-prev i {
+    margin-left: -10px;
+}
+.product-section .swiper-button-next i {
+    margin-left: -19px;
+}
+
+.product-section .swiper-button-next i:hover, .product-section .swiper-button-prev i:hover {
+    opacity: 1;
+}
+
+.product-section .right {
+    margin: 0;
+    padding: 0;
+}
+
+.product-section .right h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.product-section .right .flex-div {
+    display: flex;
+}
+
+.product-section .right .flex-div {
+    display: flex;
+    margin-bottom: 12px;
+}
+.product-section .right .flex-div.first {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.product-section .right .flex-div .left {
+    width: 140px;
+    margin-right: 0px;
+}
+
+.flex-div h5 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.flex-div h6 {
+    font-size: 1em;
+    margin: 0px;
+}
+
+.flex-div p {
+    margin: 0px;
+    font-size: 0.75em;
+}
+
+.product-section .right .buttons {
+    display: flex;
+    margin-top: 30px;
+}
+
+.product-section .right .buttons button {
+    margin-right: 20px;
+    padding: 10px 15px;
+    font-size: 0.9em;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+
+.product-section .right .buttons button.auto {
+    border: 1px solid #DC445D;
+    color: #DC445D;
+    background: transparent;
+}
+.product-section .right .buttons button.bid {
+    border: 1px solid #DC445D;
+    background: #DC445D;
+    color: #fff;
+}
+.product-section .right .buttons button.add {
+    padding: 10px 0px;
+    border: none;
+    background: transparent;
+    color: #DC445D;
+}
+
+
+.product-section .modal .modal-body h4 {
+    font-size: 1.2em;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+.product-section .modal .modal-body .product-name {
+    font-size: 0.95em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.product-section .modal .modal-body .flex-div {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.product-section .modal .modal-body .flex-div .left {
+    width: 160px;
+    margin-right: 0px;
+}
+
+.product-section .modal .modal-body .flex-div h6 {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.product-section .modal .modal-body form {
+    padding: 0;
+    margin: 0;
+}
+
+.product-section .modal form .form-group {
+    margin-bottom: 30px;
+}
+
+.product-section .modal form .form-group label {
+    font-size: 0.8em;
+    margin-bottom: 7px;
+}
+
+.product-section .modal form .form-group .group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-section .modal form .form-group input {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    border: 1px solid #CACBCC;
+    padding: 17px 13px;
+    padding-bottom: 16px;
+    height: 45px;
+    border-radius: 3px;
+}
+.product-section .modal form .form-group input:focus {
+    border: 1px solid #000 !important;
+}
+
+.product-section .modal form .form-group .group p {
+    margin: 0px 18px;
+}
+
+.product-section .modal form .buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.product-section .modal form .buttons .set-btn {
+    font-family: 'Open Sans', sans-serif;
+    width: 120px;
+    background: #DC445D;
+    color: #fff;
+    font-size: 0.95em;
+    padding: 14px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.product-section .modal form .buttons .set-btn:hover {
+    opacity: .95;
+}
+
+.product-section .modal form .buttons .cancel-btn {
+    font-family: 'Open Sans', sans-serif;
+    background: transparent;
+    color: #DC445D;
+    font-size: 0.95em;
+    padding: 14px 0px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.product-navigation .nav {
+    justify-content: center;
+    border-bottom: 1px solid #CACBCC;
+}
+
+.product-navigation .nav .nav-link {
+    border: none;
+    color: #AAAAAA;
+    background: #F8F8F8;
+    border-bottom: 1px solid #CACBCC;
+}
+
+.product-navigation .nav .nav-link:hover {
+    border: none;
+    border-bottom: 1px solid #CACBCC;
+}
+.product-navigation .nav .nav-link.active {
+    border: 1px solid #CACBCC;
+    color: #000000;
+    background: #fff;
+}
+
+.product-navigation .tab-content {
+    margin-top: 54px;
+}
+
+.product-navigation .tab-content .table {
+    margin: 0 auto;
+    width: 720px;
+}
+
+.product.adverts {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    padding-bottom: 100px !important;
+}
+
+.product.adverts .card-one {
+    background: url(../images/advert-img-1.png) no-repeat;
+}
+.product.adverts .card-two {
+    background: url(../images/advert-img-1.png) no-repeat;
+}
+.product.adverts .card-three {
+    background: url(../images/advert-img-1.png) no-repeat;
+}
+.product.adverts .card-four {
+    background: url(../images/advert-img-1.png) no-repeat;
+}
+
+
+/* Product Page Ends Here */
 
 
 /* Footer Starts Here */
@@ -1137,6 +1444,20 @@ footer .columns .footer-form .primary-btn {
     }
 }
 
+@media screen and (max-width: 850px){
+    .product-section {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 70px;
+        padding-top: 40px !important;
+    }
+
+    .product-section .left {
+        width: 400px;
+    }
+}
+
 @media screen and (max-width: 830px){
     .section-three.upcoming .cards-div .swiper-wrapper {
         display: grid;
@@ -1226,6 +1547,11 @@ footer .columns .footer-form .primary-btn {
         grid-column-gap: 30px;
     }
 
+    .product-navigation .nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     footer .columns-row {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -1259,6 +1585,19 @@ footer .columns .footer-form .primary-btn {
     .section-three .swiper-container {
         padding: 4px 80px;
         padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .product-section .left {
+        width: 300px;
+    }
+
+    .product-section .left .swiper-slide {
+        border: 1px solid #eee;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 }
 
@@ -1296,5 +1635,16 @@ footer .columns .footer-form .primary-btn {
     .section-three.upcoming .cards-div .swiper-wrapper .card {
         margin: 0 auto;
         width: 100%;
+    }
+
+    .product-navigation .nav {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 318px){
+    .product-section .left {
+        width: 285px;
     }
 }
