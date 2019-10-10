@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Awoof | Bid History</title>
+        <link rel="icon" href="images/favicon.png" />
+        
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+
+        <!-- Font-Awesome CSS CDN -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="css/account.css"/>
+
+        <!-- JS -->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    </head>
+
+    <body>
+
+        <!-- Navbar Starts Here -->
+        <nav class="navbar navbar-expand-xl sticky-top">
+            <a class="navbar-brand logo" href="index.html">
+                <img src="images/logo.jpg" class="main" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><img class="open-nav" src="images/menu.png"></span>
+            </button>
+
+            <!-- <div class="collapse navbar-collapse not-signed-in" id="navbarsExample08">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="live.html" class="links">Live Auditions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="upcoming.html" class="links">Upcoming Auditions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="closed.html" class="links">Closed Auditions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="winners.html" class="links">Winners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="how-it-works.html" class="links">How It Works</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav mr-right">
+                    <li class="nav-item">
+                        <a href=""><i class="fas fa-search"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="links login" data-toggle="modal" data-target="#logInModal">Log In</a>
+                    </li>
+                    <li class="nav-item login">
+                        <a href="sign-up.html" class="links sign-up" data-toggle="modal" data-target="#signUpModal">Sign Up</a>
+                    </li>
+                </ul>
+            </div> -->
+
+            <div class="collapse navbar-collapse signed-in" id="navbarsExample08">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="live.html" class="links">Live Auditions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="upcoming.html" class="links">Upcoming Auditions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="closed.html" class="links">Closed Auditions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="winners.html" class="links">Winners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="how-it-works.html" class="links">How It Works</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav mr-right">
+                    <li class="nav-item dropdown user">
+                        <a class="nav-link" href="#" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <p class="username"><img src="images/user-img.png">Chukwuemeka<i class="fas fa-chevron-down"></i></p>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown08">
+                            <a class="dropdown-item" href="dashboard.html">Dashboard</a>
+                            <hr>
+                            <a class="dropdown-item" href="sign-in.html">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Navbar Ends Here -->
+
+        <!-- Main Page Content Starts Here -->
+        <div class="main content" id="main">
+
+            <div class="section bids">
+
+                <div class="left">
+                    <div class="sidenav-links" id="accordion">
+
+                        <div class="sidenav-link">
+                            <button class="collapsed btn btn-link link chevron" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                My Account
+                            </button>
+
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                              <div class="card-body">
+                                <p class="card-body-link"><a href="account.html">Profile Details</a></p>
+                                <p class="card-body-link"><a href="account.html">Password</a></p>
+                                <p><a href="account.html">Account Details</a></p>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="sidenav-link">
+                            <a href="add-bids.html"><p class="link">Add Bids</p></a>
+                        </div>
+
+                        <div class="sidenav-link">
+                            <a href="bid-history.html"><p class="link active">Bid History</p></a>
+                        </div>
+
+                        <div class="sidenav-link">
+                            <a href="order-history.html"><p class="link">Order History</p></a>
+                        </div>
+
+                        <!-- <div class="sidenav-link">
+                            <button class="collapsed btn btn-link link chevron" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Promote
+                            </button>
+
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p class="card-body-link"><a href="admin-email-campaigns.html">Email Campaigns</a></p>
+                                    <p class="card-body-link"><a href="admin-sales-competitions.html">Sales Competitions</a></p>
+                                    <p><a href="admin-tracking-links.html">Tracking Links</a></p>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="sidenav-link">
+                            <a href="mywinnings.html"><p class="link">My Winnings</p></a>
+                        </div>
+
+                        <div class="sidenav-link">
+                            <a href="myautobids.html"><p class="link">My Autobids</p></a>
+                        </div>
+
+                        <div class="sidenav-link">
+                            <a href="myreferral.html"><p class="link">Referral Earnings</p></a>
+                        </div>
+
+                        <div class="sidenav-link">
+                            <a href="index.html"><p class="link">Logout</p></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="right">
+                    <h4 class="header-text">Bid History</h4>
+
+                    <!-- <div class="bid-history-div empty">
+                        <img src="images/search-icon.svg" />
+                        <h6>No bid log found</h6>
+                        <p>Place a bid on a product to get started</p>
+                    </div> -->
+
+                    <div class="bid-history-div not-empty">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Product</th>
+                                        <th scope="col">Your Last Bid</th>
+                                        <th scope="col">Current Bid</th>
+                                        <th scope="col">Bid Time</th>
+                                        <th scope="col">Auction Date</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Gray Headphone</td>
+                                        <td>₦1,500</td>
+                                        <td>₦1,600</td>
+                                        <td>03/08/2019 08:00 AM</td>
+                                        <td>03/08/2019 08:00 AM</td>
+                                        <td class="lost">LOST</td>
+                                        <td>
+                                            <!-- <button>Bid</button> -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gray Headphone</td>
+                                        <td>₦1,500</td>
+                                        <td>₦1,600</td>
+                                        <td>03/08/2019 08:00 AM</td>
+                                        <td>03/08/2019 08:00 AM</td>
+                                        <td class="ongoing">ONGOING</td>
+                                        <td><button>Bid</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gray Headphone</td>
+                                        <td>₦1,500</td>
+                                        <td>₦1,600</td>
+                                        <td>03/08/2019 08:00 AM</td>
+                                        <td>03/08/2019 08:00 AM</td>
+                                        <td class="won">WON</td>
+                                        <td><button>Buy</button></td>
+                                    </tr>
+                              </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+                
+        </div>
+
+        <footer class="main">
+
+            <div class="columns-row">
+                <div class="columns">
+                    <p class="footer-link-header-text">Quick Links</p>
+                    <div class="footer-links grid">
+                        <p><a href="about.html" class="link">About Us</a></p>
+                        <p><a href="how-to-claim.html" class="link">How to Claim</a></p>
+                        <p><a href="contact.html" class="link">Contact Us</a></p>
+                        <p><a href="faq.html" class="link">FAQs</a></p>
+                        <p><a href="how-it-works.html" class="link">How it Works</a></p>
+                        <p><a href="legal.html" class="link">Legal Terms of Use</a></p>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <p class="footer-link-header-text">Social Media</p>
+                    <div class="footer-links icons">
+                        <a href="https://www.youtube.com"><img src="images/youtube.svg" /></a>
+                        <a href="https://www.instagram.com"><img src="images/instagram.svg" /></a>
+                        <a href="https://www.facebook.com"><img src="images/facebook.svg" /></a>
+                        <a href="https://www.twitter.com"><img src="images/twitter.svg" /></a>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <p class="footer-link-header-text">Stay Updated</p>
+                    <p class="join">Subscribe to our newsletter and be the first to get latest updates about theraphy from us.</p>
+                    <form class="footer-form">
+                        <input type="email" name="email" placeholder="Enter Email" required>
+                        <button class="primary-btn">Submit</button>
+                    </form>
+                </div>
+
+                <div class="columns copy">
+                    <p class="join">Copyright &#9400; 2019 Awoof Bay. All Rights Reserved.</p>
+                </div>
+
+                <div class="columns foot-links">
+                    <div class="footer-links grid">
+                        <p><a href="privacy.html" class="link">Privacy Policy</a></p>
+                        <p><a href="terms.html" class="link">Terms & Conditions</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+        <!-- Main Page Content Ends Here -->
+
+            
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
